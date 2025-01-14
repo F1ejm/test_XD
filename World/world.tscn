@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwcfbx00kpeep"]
+[gd_scene load_steps=3 format=3 uid="uid://dwcfbx00kpeep"]
 
 [ext_resource type="PackedScene" uid="uid://cagsc78d1co34" path="res://Player/Player.tscn" id="1_2epci"]
+[ext_resource type="PackedScene" uid="uid://dnloaqyhd21b6" path="res://inventory/item_collectable/stick/stick_collectable.tscn" id="2_p7a6e"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_2epci")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_p7a6e")]
+position = Vector2(345, 208)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
