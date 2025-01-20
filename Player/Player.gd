@@ -50,3 +50,7 @@ func player_movement(_delta):
 		velocity.y = 0
 	
 	move_and_slide()
+
+
+func _on_static_body_2d_ready_to_insert():
+	pass # Replace with function body.

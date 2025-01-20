@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bhsmxe40nupyq"]
+[gd_scene load_steps=3 format=3 uid="uid://bhsmxe40nupyq"]
 
 [ext_resource type="Texture2D" uid="uid://cgx2rwl3v7wxw" path="res://Art/slot.png" id="1_0gk5w"]
+[ext_resource type="Script" path="res://inventory/visuals/inventory_ui_slot.gd" id="1_pyvjq"]
 
 [node name="slot_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 48.0
 offset_bottom = 48.0
+script = ExtResource("1_pyvjq")
 
 [node name="slot" type="Sprite2D" parent="."]
 position = Vector2(24, 24)

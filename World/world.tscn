@@ -11,3 +11,5 @@
 position = Vector2(345, 208)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[connection signal="ready_to_insert" from="StaticBody2D" to="Player" method="_on_static_body_2d_ready_to_insert"]
