@@ -6,13 +6,13 @@
 [node name="slot_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 48.0
-offset_bottom = 48.0
+offset_right = 69.0
+offset_bottom = 69.0
 script = ExtResource("1_pyvjq")
 
 [node name="slot" type="Sprite2D" parent="."]
-position = Vector2(24, 24)
-scale = Vector2(3, 3)
+position = Vector2(34.5, 34.5)
+scale = Vector2(4.3125, 4.3125)
 texture = ExtResource("1_0gk5w")
 
 [node name="item_if_visible" type="Sprite2D" parent="."]

@@ -1,15 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwcfbx00kpeep"]
+[gd_scene load_steps=4 format=3 uid="uid://dwcfbx00kpeep"]
 
 [ext_resource type="PackedScene" uid="uid://cagsc78d1co34" path="res://Player/Player.tscn" id="1_2epci"]
 [ext_resource type="PackedScene" uid="uid://dnloaqyhd21b6" path="res://inventory/item_collectable/stick/stick_collectable.tscn" id="2_p7a6e"]
+[ext_resource type="PackedScene" uid="uid://bhsmxe40nupyq" path="res://inventory/visuals/inventory_ui_slot.tscn" id="3_2cba2"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_2epci")]
+position = Vector2(577, 324)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player"]
+
+[node name="slot_ui" parent="Player/CanvasLayer" instance=ExtResource("3_2cba2")]
+offset_left = 562.0
+offset_top = 561.0
+offset_right = 631.0
+offset_bottom = 631.0
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_p7a6e")]
 position = Vector2(345, 208)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[connection signal="ready_to_insert" from="StaticBody2D" to="Player" method="_on_static_body_2d_ready_to_insert"]
+[connection signal="ready_to_insert" from="StaticBody2D" to="Player/CanvasLayer/slot_ui" method="_on_static_body_2d_ready_to_insert"]
