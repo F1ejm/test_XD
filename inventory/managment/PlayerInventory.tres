@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="PlayerInventory" load_steps=12 format=3 uid="uid://dgnyihlvkkavt"]
+
+[ext_resource type="Script" path="res://inventory/managment/PlayerInventory.gd" id="1_djo01"]
+[ext_resource type="Script" path="res://inventory/item_/InventoryItem.gd" id="1_xow2y"]
+
+[sub_resource type="Resource" id="Resource_85ycx"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_mn8t5"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_b0xpk"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_yfmqw"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_8tcg2"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_josa6"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_eagwl"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_mxjya"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[sub_resource type="Resource" id="Resource_hji0j"]
+script = ExtResource("1_xow2y")
+name = ""
+
+[resource]
+script = ExtResource("1_djo01")
+inventory = Array[ExtResource("1_xow2y")]([SubResource("Resource_85ycx"), SubResource("Resource_mn8t5"), SubResource("Resource_b0xpk"), SubResource("Resource_yfmqw"), SubResource("Resource_8tcg2"), SubResource("Resource_josa6"), SubResource("Resource_eagwl"), SubResource("Resource_mxjya"), SubResource("Resource_hji0j")])
