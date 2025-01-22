@@ -10,7 +10,7 @@ func _ready():
 func _process(_delta):
 	player_movement(_delta)
 
-func Player():
+func Palyer():
 	pass
 
 func player_movement(_delta):
@@ -50,3 +50,4 @@ func player_movement(_delta):
 		velocity.y = 0
 	
 	move_and_slide()
+
