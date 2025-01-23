@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://72oxmv5x5fx7"]
+
+[ext_resource type="Script" path="res://stick-collectable.gd" id="1_f1imi"]
+[ext_resource type="Resource" uid="uid://dxdnfc7drqsuk" path="res://inventory/stick.tres" id="2_0vlye"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v16g7"]
+radius = 8.66667
+height = 17.3333
+
+[node name="stick-collectable" type="StaticBody2D"]
+texture_filter = 1
+texture_repeat = 1
+scale = Vector2(3, 3)
+script = ExtResource("1_f1imi")
+item = ExtResource("2_0vlye")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_v16g7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_entered"]

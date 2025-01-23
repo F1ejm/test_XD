@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var inventory : PlayerInventory
+
 const SPEED = 300
 
 var current_dir = "none"
@@ -10,7 +12,7 @@ func _ready():
 func _process(_delta):
 	player_movement(_delta)
 
-func Palyer():
+func Player():
 	pass
 
 func player_movement(_delta):
@@ -51,3 +53,5 @@ func player_movement(_delta):
 	
 	move_and_slide()
 
+func _add_to_inventory_(item : PlayerInventory):
+	inventory.insert_to_inventory(item)

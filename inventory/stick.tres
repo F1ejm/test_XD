@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="item" load_steps=3 format=3 uid="uid://dxdnfc7drqsuk"]
+
+[ext_resource type="Texture2D" uid="uid://ewdr1l6shnxu" path="res://Art/stick-icon.png" id="1_5gidx"]
+[ext_resource type="Script" path="res://inventory/item.gd" id="1_ncn44"]
+
+[resource]
+script = ExtResource("1_ncn44")
+icon = ExtResource("1_5gidx")
+name = "stick"
