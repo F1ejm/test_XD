@@ -18,4 +18,4 @@ func body_setup():
 func _on_entered(body):
 	if body.has_method("Player"):
 		queue_free()
-		emit_signal("add_to_inventory",item)
+		emit_signal("add_to_inventory", item)

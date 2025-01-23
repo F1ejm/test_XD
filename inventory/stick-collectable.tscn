@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://dxdnfc7drqsuk" path="res://inventory/stick.tres" id="2_0vlye"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v16g7"]
-radius = 8.66667
+radius = 8.66665
 height = 17.3333
 
 [node name="stick-collectable" type="StaticBody2D"]
