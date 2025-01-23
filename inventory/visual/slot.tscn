@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://52d5koudlkd6"]
-
-[node name="Slot" type="Panel"]
-
-[node name="background" type="Sprite2D" parent="."]
-
-[node name="item_visual" type="Sprite2D" parent="."]
