@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="PlayerInventory" load_steps=12 format=3 uid="uid://cy4gq1bkvpbqu"]
 
-[ext_resource type="Script" path="res://inventory/item.gd" id="1_f1dl8"]
+[ext_resource type="Script" path="res://inventory/item/resourse/item.gd" id="1_f1dl8"]
 [ext_resource type="Script" path="res://PlayerInventory.gd" id="1_ietdm"]
 
 [sub_resource type="Resource" id="Resource_s20ky"]

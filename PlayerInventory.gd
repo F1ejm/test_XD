@@ -7,3 +7,4 @@ class_name PlayerInventory
 
 func insert(item ):
 	inv[1] = item
+	print(inv[1].name)

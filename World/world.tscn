@@ -1,15 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwcfbx00kpeep"]
+[gd_scene load_steps=5 format=3 uid="uid://dwcfbx00kpeep"]
 
 [ext_resource type="PackedScene" uid="uid://cagsc78d1co34" path="res://Player/Player.tscn" id="1_2epci"]
 [ext_resource type="Resource" uid="uid://cy4gq1bkvpbqu" path="res://inventory/PlayerInventory.tres" id="2_jnron"]
-[ext_resource type="PackedScene" uid="uid://72oxmv5x5fx7" path="res://inventory/stick-collectable.tscn" id="2_rm6ef"]
+[ext_resource type="PackedScene" uid="uid://bswcvvayssj6c" path="res://inventory/item/collectable/sword-collectable.tscn" id="3_osykc"]
+[ext_resource type="PackedScene" uid="uid://72oxmv5x5fx7" path="res://inventory/item/collectable/stick-collectable.tscn" id="4_hh6rr"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_2epci")]
 inventory = ExtResource("2_jnron")
 
-[node name="stick-collectable" parent="." instance=ExtResource("2_rm6ef")]
-position = Vector2(435, 218)
+[node name="items" type="Node" parent="."]
 
-[connection signal="add_to_inventory" from="stick-collectable" to="Player" method="_add_to_inventory_"]
+[node name="sword-collectable" parent="items" instance=ExtResource("3_osykc")]
+position = Vector2(370, 132)
+
+[node name="stick-collectable" parent="items" instance=ExtResource("4_hh6rr")]
+position = Vector2(182, 160)
+scale = Vector2(9, 9)
+
+[connection signal="add_to_inventory" from="items/sword-collectable" to="Player" method="_add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable" to="Player" method="_add_to_inventory"]
