@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="PlayerInventory" load_steps=12 format=3 uid="uid://cy4gq1bkvpbqu"]
 
 [ext_resource type="Script" path="res://inventory/item/resourse/item.gd" id="1_f1dl8"]
-[ext_resource type="Script" path="res://PlayerInventory.gd" id="1_ietdm"]
+[ext_resource type="Script" path="res://inventory/PlayerInvntory/PlayerInventory.gd" id="2_medj4"]
 
 [sub_resource type="Resource" id="Resource_s20ky"]
 script = ExtResource("1_f1dl8")
-name = ""
+name = "stick"
 
 [sub_resource type="Resource" id="Resource_kbfhx"]
 script = ExtResource("1_f1dl8")
@@ -40,5 +40,5 @@ script = ExtResource("1_f1dl8")
 name = ""
 
 [resource]
-script = ExtResource("1_ietdm")
+script = ExtResource("2_medj4")
 inv = Array[ExtResource("1_f1dl8")]([SubResource("Resource_s20ky"), SubResource("Resource_kbfhx"), SubResource("Resource_gvki6"), SubResource("Resource_22rb5"), SubResource("Resource_ysufa"), SubResource("Resource_m3wmc"), SubResource("Resource_ply4r"), SubResource("Resource_2khyl"), SubResource("Resource_06l38")])

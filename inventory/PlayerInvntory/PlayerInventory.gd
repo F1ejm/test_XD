@@ -4,7 +4,11 @@ class_name PlayerInventory
 
 @export var inv : Array[Item]
 
+signal update_slot
 
 func insert(item ):
-	inv[1] = item
-	print(inv[1].name)
+	for Item in inv : 
+		print(item.name)
+
+#inv[1] = item
+#print(inv[1].name)

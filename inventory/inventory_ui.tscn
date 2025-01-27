@@ -1,10 +1,16 @@
-[gd_scene format=3 uid="uid://co3n2buicp88o"]
+[gd_scene load_steps=3 format=3 uid="uid://co3n2buicp88o"]
+
+[ext_resource type="Script" path="res://inventory/inventory_ui.gd" id="1_3v4kh"]
+[ext_resource type="Resource" uid="uid://cy4gq1bkvpbqu" path="res://inventory/PlayerInvntory/PlayerInventory.tres" id="2_mu745"]
 
 [node name="Inventory_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_3v4kh")
+playerInventory = ExtResource("2_mu745")
+slot_list = [null, null, null, null, null, null]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -13,5 +19,7 @@ offset_bottom = 40.0
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 0
-offset_right = 40.0
+offset_right = 192.0
 offset_bottom = 40.0
+theme_override_constants/h_separation = 25
+columns = 9
