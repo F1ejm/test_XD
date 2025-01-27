@@ -4,11 +4,15 @@ class_name PlayerInventory
 
 @export var inv : Array[Item]
 
-signal update_slot
+var i = 0
 
-func insert(item ):
-	for Item in inv : 
-		print(item.name)
+func insert(item):
+#	pass
+#	for slot_num in range(0, 9):
+#		inv[slot_num] = item 
+#		slot_num += 1 
+#		print(inv)
 
-#inv[1] = item
+	inv[i] = item
+	i+=1
 #print(inv[1].name)

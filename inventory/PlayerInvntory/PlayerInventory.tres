@@ -1,44 +1,7 @@
-[gd_resource type="Resource" script_class="PlayerInventory" load_steps=12 format=3 uid="uid://cy4gq1bkvpbqu"]
+[gd_resource type="Resource" script_class="PlayerInventory" load_steps=2 format=3 uid="uid://cy4gq1bkvpbqu"]
 
-[ext_resource type="Script" path="res://inventory/item/resourse/item.gd" id="1_f1dl8"]
 [ext_resource type="Script" path="res://inventory/PlayerInvntory/PlayerInventory.gd" id="2_medj4"]
-
-[sub_resource type="Resource" id="Resource_s20ky"]
-script = ExtResource("1_f1dl8")
-name = "stick"
-
-[sub_resource type="Resource" id="Resource_kbfhx"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_gvki6"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_22rb5"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_ysufa"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_m3wmc"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_ply4r"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_2khyl"]
-script = ExtResource("1_f1dl8")
-name = ""
-
-[sub_resource type="Resource" id="Resource_06l38"]
-script = ExtResource("1_f1dl8")
-name = ""
 
 [resource]
 script = ExtResource("2_medj4")
-inv = Array[ExtResource("1_f1dl8")]([SubResource("Resource_s20ky"), SubResource("Resource_kbfhx"), SubResource("Resource_gvki6"), SubResource("Resource_22rb5"), SubResource("Resource_ysufa"), SubResource("Resource_m3wmc"), SubResource("Resource_ply4r"), SubResource("Resource_2khyl"), SubResource("Resource_06l38")])
+inv = Array[Resource("res://inventory/item/resourse/item.gd")]([null, null, null, null, null, null, null, null, null])

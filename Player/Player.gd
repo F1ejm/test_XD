@@ -11,6 +11,7 @@ func _ready():
 
 func _process(_delta):
 	player_movement(_delta)
+	print(inventory.inv)
 
 func Player():
 	pass
