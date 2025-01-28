@@ -11,7 +11,6 @@ func _ready():
 
 func _process(_delta):
 	player_movement(_delta)
-	print(inventory.inv)
 
 func Player():
 	pass
@@ -57,5 +56,4 @@ func player_movement(_delta):
 func _add_to_inventory(item : Item):
 	print(item.name)
 	inventory.insert(item)
-
 

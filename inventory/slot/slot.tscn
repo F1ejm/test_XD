@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmhwsjq8u6o61"]
+
+[ext_resource type="Script" path="res://inventory/slot/slot.gd" id="1_7esbi"]
+[ext_resource type="Resource" uid="uid://darnb7vg82v4u" path="res://inventory/slot/resource/Slot.tres" id="2_h726l"]
+
+[node name="Slot" type="Panel"]
+script = ExtResource("1_7esbi")
+slot = ExtResource("2_h726l")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

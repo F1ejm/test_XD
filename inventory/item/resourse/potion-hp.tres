@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dc83jgvtifyvi"]
+
+[ext_resource type="Script" path="res://inventory/item/resourse/item.gd" id="1_agsfo"]
+[ext_resource type="Texture2D" uid="uid://c1acfxgpbkk67" path="res://Art/Potion_red.png" id="1_n0bpq"]
+
+[resource]
+script = ExtResource("1_agsfo")
+icon = ExtResource("1_n0bpq")
+name = "Potion"
+in_slot = false

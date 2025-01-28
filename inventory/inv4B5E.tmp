@@ -11,7 +11,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_3v4kh")
 inventory = ExtResource("2_mu745")
-slot_list = [null, null, null, null, null, null, null, null, null]
+slot_list = [NodePath("NinePatchRect/GridContainer/Slot1"), NodePath("NinePatchRect/GridContainer/Slot2"), NodePath("NinePatchRect/GridContainer/Slot3"), NodePath("NinePatchRect/GridContainer/Slot4"), NodePath("NinePatchRect/GridContainer/Slot5"), NodePath("NinePatchRect/GridContainer/Slot6"), NodePath("NinePatchRect/GridContainer/Slot7"), NodePath("NinePatchRect/GridContainer/Slot9"), NodePath("NinePatchRect/GridContainer/Slot9")]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
