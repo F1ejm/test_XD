@@ -4,14 +4,13 @@
 [ext_resource type="Resource" uid="uid://cy4gq1bkvpbqu" path="res://inventory/PlayerInvntory/PlayerInventory.tres" id="2_mu745"]
 [ext_resource type="PackedScene" uid="uid://cmhwsjq8u6o61" path="res://inventory/slot/slot.tscn" id="3_nx8pr"]
 
-[node name="Inventory_ui" type="Control" node_paths=PackedStringArray("slot_list")]
+[node name="Inventory_ui" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_3v4kh")
 inventory = ExtResource("2_mu745")
-slot_list = [null, null, null, null, null, null, null, null, null]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -20,8 +19,8 @@ offset_bottom = 40.0
 
 [node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
 layout_mode = 0
-offset_right = 192.0
-offset_bottom = 40.0
+offset_right = 296.0
+offset_bottom = 103.0
 theme_override_constants/h_separation = 25
 columns = 9
 

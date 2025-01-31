@@ -1,8 +1,9 @@
 extends Control
 
 @export var inventory : PlayerInventory
-@export var slot_list : Array[Panel]
 
+@onready var Slot: Array = $NinePatchRect/GridContainer.get_children()
 
-func _process(delta):
-	pass
+func update_slot():
+	for i in range(min(inventory.item.size(), Slot.size())):
+		Slot[i].update

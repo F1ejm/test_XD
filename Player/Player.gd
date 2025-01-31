@@ -54,6 +54,5 @@ func player_movement(_delta):
 	move_and_slide()
 
 func _add_to_inventory(item : Item):
-	print(item.name)
 	inventory.insert(item)
 
