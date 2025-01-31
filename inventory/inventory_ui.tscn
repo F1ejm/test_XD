@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://co3n2buicp88o"]
+[gd_scene load_steps=3 format=3 uid="uid://co3n2buicp88o"]
 
 [ext_resource type="Script" path="res://inventory/inventory_ui.gd" id="1_3v4kh"]
-[ext_resource type="Resource" uid="uid://cy4gq1bkvpbqu" path="res://inventory/PlayerInvntory/PlayerInventory.tres" id="2_mu745"]
 [ext_resource type="PackedScene" uid="uid://cmhwsjq8u6o61" path="res://inventory/slot/slot.tscn" id="3_nx8pr"]
 
 [node name="Inventory_ui" type="Control"]
@@ -10,7 +9,6 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_3v4kh")
-inventory = ExtResource("2_mu745")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0

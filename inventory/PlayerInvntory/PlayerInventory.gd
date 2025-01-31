@@ -8,7 +8,9 @@ class_name PlayerInventory
 
 func insert(item):
 	for i in range(0,9):
-		if inv[i] != Item:
+		if inv[i] == null :
 			inv[i] = item
-			print(item.name)
+			print(inv)
 			break
+		else:
+			pass
