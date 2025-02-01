@@ -5,3 +5,4 @@
 [resource]
 script = ExtResource("2_medj4")
 inv = Array[Resource("res://inventory/item/resourse/item.gd")]([null, null, null, null, null, null, null, null, null])
+is_full = false

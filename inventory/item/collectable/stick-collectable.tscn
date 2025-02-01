@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://72oxmv5x5fx7"]
+[gd_scene load_steps=5 format=3 uid="uid://72oxmv5x5fx7"]
 
 [ext_resource type="Script" path="res://inventory/item/collectable/collectable.gd" id="1_f1imi"]
 [ext_resource type="Resource" uid="uid://dxdnfc7drqsuk" path="res://inventory/item/resourse/stick.tres" id="2_0vlye"]
+[ext_resource type="Resource" uid="uid://cy4gq1bkvpbqu" path="res://inventory/PlayerInvntory/PlayerInventory.tres" id="2_focs0"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v16g7"]
 radius = 8.66665
@@ -12,6 +13,7 @@ texture_filter = 1
 texture_repeat = 1
 scale = Vector2(3, 3)
 script = ExtResource("1_f1imi")
+inventory = ExtResource("2_focs0")
 item = ExtResource("2_0vlye")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
