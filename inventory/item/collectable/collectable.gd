@@ -6,6 +6,7 @@ extends StaticBody2D
 @export var item : Item
 
 signal add_to_inventory
+signal update_inventory_ui
 
 
 func _ready():
@@ -20,5 +21,6 @@ func _on_entered(body):
 	if body.has_method("Player") and inventory.is_full < 9 :
 		queue_free()
 		emit_signal("add_to_inventory", item)
+		emit_signal("update_inventory_ui")
 	else:
 		print("inventory is full")

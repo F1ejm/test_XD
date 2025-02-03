@@ -11,6 +11,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_3v4kh")
 inventory = ExtResource("2_56crj")
+slot = [null, null, null, null, null, null, null, null, null]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
 layout_mode = 0
@@ -25,28 +26,19 @@ theme_override_constants/h_separation = 25
 columns = 9
 
 [node name="Slot1" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2
 
 [node name="Slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("3_nx8pr")]
-layout_mode = 2

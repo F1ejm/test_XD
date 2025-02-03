@@ -60,10 +60,15 @@ position = Vector2(630, 133)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Inventory_ui" parent="CanvasLayer" instance=ExtResource("4_8i5w5")]
+offset_right = 1155.0
+offset_bottom = 649.0
 
 [connection signal="add_to_inventory" from="items/sword-collectable" to="Player" method="_add_to_inventory"]
+[connection signal="update_inventory_ui" from="items/sword-collectable" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
 [connection signal="add_to_inventory" from="items/sword-collectable3" to="Player" method="_add_to_inventory"]
+[connection signal="update_inventory_ui" from="items/sword-collectable3" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
 [connection signal="add_to_inventory" from="items/sword-collectable2" to="Player" method="_add_to_inventory"]
+[connection signal="update_inventory_ui" from="items/sword-collectable2" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
 [connection signal="add_to_inventory" from="items/stick-collectable" to="Player" method="_add_to_inventory"]
 [connection signal="add_to_inventory" from="items/stick-collectable5" to="Player" method="_add_to_inventory"]
 [connection signal="add_to_inventory" from="items/sword-collectable4" to="Player" method="_add_to_inventory"]
