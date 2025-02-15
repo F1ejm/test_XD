@@ -2,8 +2,9 @@ extends Resource
 
 class_name PlayerInventory
 
-@export var inv : Array[Item]
+signal update 
 
+@export var inv : Array[Item]
 @export var is_full : int
 
 func insert(item):
@@ -12,4 +13,5 @@ func insert(item):
 			inv[i] = item
 			is_full += 1 
 			print(inv)
+			update.emit(item)
 			break

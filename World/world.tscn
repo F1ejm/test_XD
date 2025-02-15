@@ -3,59 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://cagsc78d1co34" path="res://Player/Player.tscn" id="1_2epci"]
 [ext_resource type="PackedScene" uid="uid://bswcvvayssj6c" path="res://inventory/item/collectable/sword-collectable.tscn" id="3_osykc"]
 [ext_resource type="PackedScene" uid="uid://co3n2buicp88o" path="res://inventory/inventory_ui.tscn" id="4_8i5w5"]
-[ext_resource type="PackedScene" uid="uid://72oxmv5x5fx7" path="res://inventory/item/collectable/stick-collectable.tscn" id="4_hh6rr"]
-[ext_resource type="PackedScene" uid="uid://b0uk8oehhwvpg" path="res://inventory/item/collectable/potion_hp-collectable.tscn" id="4_ybkfs"]
+[ext_resource type="PackedScene" uid="uid://b0uk8oehhwvpg" path="res://inventory/item/collectable/potion_hp-collectable.tscn" id="4_jdi71"]
+[ext_resource type="PackedScene" uid="uid://72oxmv5x5fx7" path="res://inventory/item/collectable/stick-collectable.tscn" id="5_kldkq"]
 
 [node name="World" type="Node2D"]
-
-[node name="Player" parent="." instance=ExtResource("1_2epci")]
-
-[node name="items" type="Node" parent="."]
-
-[node name="sword-collectable" parent="items" instance=ExtResource("3_osykc")]
-position = Vector2(772, 409)
-
-[node name="sword-collectable3" parent="items" instance=ExtResource("3_osykc")]
-position = Vector2(772, 409)
-
-[node name="sword-collectable2" parent="items" instance=ExtResource("3_osykc")]
-position = Vector2(344, 200)
-
-[node name="stick-collectable" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(897, 183)
-scale = Vector2(9, 9)
-
-[node name="stick-collectable5" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(897, 183)
-scale = Vector2(9, 9)
-
-[node name="sword-collectable4" parent="items" instance=ExtResource("3_osykc")]
-position = Vector2(772, 409)
-
-[node name="stick-collectable6" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(897, 183)
-scale = Vector2(9, 9)
-
-[node name="stick-collectable2" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(154, 503)
-scale = Vector2(9, 9)
-
-[node name="stick-collectable3" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(154, 503)
-scale = Vector2(9, 9)
-
-[node name="stick-collectable4" parent="items" instance=ExtResource("4_hh6rr")]
-position = Vector2(154, 503)
-scale = Vector2(9, 9)
-
-[node name="potion_hp_collectable" parent="items" instance=ExtResource("4_ybkfs")]
-position = Vector2(394, 347)
-
-[node name="potion_hp_collectable2" parent="items" instance=ExtResource("4_ybkfs")]
-position = Vector2(492, 516)
-
-[node name="potion_hp_collectable3" parent="items" instance=ExtResource("4_ybkfs")]
-position = Vector2(630, 133)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -63,19 +14,48 @@ position = Vector2(630, 133)
 offset_right = 1155.0
 offset_bottom = 649.0
 
-[connection signal="add_to_inventory" from="items/sword-collectable" to="Player" method="_add_to_inventory"]
+[node name="Player" parent="." instance=ExtResource("1_2epci")]
+
+[node name="items" type="Node" parent="."]
+
+[node name="sword-collectable" parent="items" instance=ExtResource("3_osykc")]
+position = Vector2(293, 392)
+
+[node name="potion_hp-collectable" parent="items" instance=ExtResource("4_jdi71")]
+position = Vector2(750, 466)
+
+[node name="potion_hp-collectable2" parent="items" instance=ExtResource("4_jdi71")]
+position = Vector2(703, 128)
+
+[node name="potion_hp-collectable3" parent="items" instance=ExtResource("4_jdi71")]
+position = Vector2(165, 237)
+
+[node name="stick-collectable" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(835, 212)
+
+[node name="stick-collectable2" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(31, 310)
+
+[node name="stick-collectable4" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(31, 310)
+
+[node name="stick-collectable5" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(31, 310)
+
+[node name="stick-collectable6" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(31, 310)
+
+[node name="stick-collectable3" parent="items" instance=ExtResource("5_kldkq")]
+position = Vector2(122, 468)
+
+[connection signal="add_to_inventory" from="items/sword-collectable" to="Player" method="add_to_inventory"]
 [connection signal="update_inventory_ui" from="items/sword-collectable" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
-[connection signal="add_to_inventory" from="items/sword-collectable3" to="Player" method="_add_to_inventory"]
-[connection signal="update_inventory_ui" from="items/sword-collectable3" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
-[connection signal="add_to_inventory" from="items/sword-collectable2" to="Player" method="_add_to_inventory"]
-[connection signal="update_inventory_ui" from="items/sword-collectable2" to="CanvasLayer/Inventory_ui" method="update_inventory_ui"]
-[connection signal="add_to_inventory" from="items/stick-collectable" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/stick-collectable5" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/sword-collectable4" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/stick-collectable6" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/stick-collectable2" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/stick-collectable3" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/stick-collectable4" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/potion_hp_collectable" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/potion_hp_collectable2" to="Player" method="_add_to_inventory"]
-[connection signal="add_to_inventory" from="items/potion_hp_collectable3" to="Player" method="_add_to_inventory"]
+[connection signal="add_to_inventory" from="items/potion_hp-collectable" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/potion_hp-collectable2" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/potion_hp-collectable3" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable2" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable4" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable5" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable6" to="Player" method="add_to_inventory"]
+[connection signal="add_to_inventory" from="items/stick-collectable3" to="Player" method="add_to_inventory"]

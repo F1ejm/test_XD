@@ -5,6 +5,5 @@
 [node name="slot" type="Sprite2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(58, 55)
 scale = Vector2(5.375, 5.375)
 texture = ExtResource("1_x03fa")
