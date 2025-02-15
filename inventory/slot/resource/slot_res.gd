@@ -1,6 +1,6 @@
 extends Resource
 
-class_name slot
+class_name Slot
 
 @export var item_in : Item
 @export var ammount : int

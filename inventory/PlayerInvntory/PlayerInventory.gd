@@ -13,5 +13,5 @@ func insert(item):
 			inv[i] = item
 			is_full += 1 
 			print(inv)
-			update.emit(item)
+			update.emit(item, i )
 			break
