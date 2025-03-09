@@ -1,5 +1,3 @@
-extends Panel
+extends TextureButton
 
-@export var slot : slot
-
-
+@export var slot : Slot

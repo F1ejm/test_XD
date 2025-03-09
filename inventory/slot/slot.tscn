@@ -1,9 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmhwsjq8u6o61"]
+[gd_scene load_steps=3 format=3 uid="uid://dr1lasmo8j2ib"]
 
-[ext_resource type="Texture2D" uid="uid://ctadj8otj85nc" path="res://Art/slot.png" id="1_x03fa"]
+[ext_resource type="Script" path="res://inventory/slot/slot.gd" id="1_h2hi8"]
+[ext_resource type="Resource" uid="uid://dnylrscodwb5e" path="res://inventory/slot/resource/slot.tres" id="2_0jjv7"]
 
-[node name="Slot" type="TextureButton"]
-offset_right = 70.0
-offset_bottom = 70.0
-texture_normal = ExtResource("1_x03fa")
-stretch_mode = 0
+[node name="TextureButton" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_h2hi8")
+slot = ExtResource("2_0jjv7")

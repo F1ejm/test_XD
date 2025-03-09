@@ -1,8 +1,45 @@
-[gd_resource type="Resource" script_class="PlayerInventory" load_steps=2 format=3 uid="uid://cy4gq1bkvpbqu"]
+[gd_resource type="Resource" script_class="PlayerInventory" load_steps=12 format=3 uid="uid://cy4gq1bkvpbqu"]
 
+[ext_resource type="Script" path="res://inventory/slot/resource/slot_res.gd" id="1_mn4gh"]
 [ext_resource type="Script" path="res://inventory/PlayerInvntory/PlayerInventory.gd" id="2_medj4"]
+
+[sub_resource type="Resource" id="Resource_1xhgt"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_mm8v5"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_ks3tv"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_s3jh6"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_a2r5d"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_3twq6"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_ht5rg"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_b21iy"]
+script = ExtResource("1_mn4gh")
+ammount = 0
+
+[sub_resource type="Resource" id="Resource_guyq0"]
+script = ExtResource("1_mn4gh")
+ammount = 0
 
 [resource]
 script = ExtResource("2_medj4")
-inv = Array[Resource("res://inventory/item/resourse/item.gd")]([null, null, null, null, null, null, null, null, null])
+inv = Array[ExtResource("1_mn4gh")]([SubResource("Resource_1xhgt"), SubResource("Resource_mm8v5"), SubResource("Resource_ks3tv"), SubResource("Resource_s3jh6"), SubResource("Resource_a2r5d"), SubResource("Resource_3twq6"), SubResource("Resource_ht5rg"), SubResource("Resource_b21iy"), SubResource("Resource_guyq0")])
 is_full = 0

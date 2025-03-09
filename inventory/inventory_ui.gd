@@ -10,7 +10,4 @@ func _ready():
 
 
 func _update(item,i):
-	print(item.name)
-	print(i)
-
-
+	slot[i].texture_normal = inventory[i].item.icon

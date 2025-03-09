@@ -55,4 +55,3 @@ func player_movement(_delta):
 
 func add_to_inventory(item : Item):
 	inventory.insert(item)
-

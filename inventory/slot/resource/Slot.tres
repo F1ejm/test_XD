@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="Slot" load_steps=2 format=3 uid="uid://darnb7vg82v4u"]
+[gd_resource type="Resource" script_class="Slot" load_steps=3 format=3 uid="uid://dnylrscodwb5e"]
 
-[ext_resource type="Script" path="res://inventory/slot/resource/slot_res.gd" id="1_37ena"]
+[ext_resource type="Script" path="res://inventory/slot/resource/slot_res.gd" id="1_1fo1s"]
+[ext_resource type="Resource" uid="uid://dxe8rk1huej14" path="res://inventory/item/resourse/item.tres" id="1_17jxg"]
 
 [resource]
-script = ExtResource("1_37ena")
+script = ExtResource("1_1fo1s")
+item = ExtResource("1_17jxg")
 ammount = 0
-filled = false
